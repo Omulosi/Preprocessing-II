@@ -133,6 +133,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: #eee;
 }
 html,
 body {
@@ -171,6 +172,30 @@ img {
   margin: 0 auto;
 }
 /* component styles */
+header {
+  color: #212529;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .main-menu {
+  height: 8.3em;
+  line-height: 8.3em;
+}
+header .main-menu nav {
+  font-size: 1.5em;
+  float: right;
+  margin-right: 2em;
+}
+header .main-menu nav ul li {
+  display: inline-block;
+}
+header .main-menu nav ul li a {
+  text-decoration: none;
+  color: #212529;
+}
+header .main-menu nav ul li ~ li {
+  margin-left: 2.2em;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

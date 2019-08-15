@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+header {
+    color: @font-color;
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+    .main-menu {
+        height: 8.3em;
+        line-height: 8.3em;
+        nav { 
+            font-size: 1.5em;
+            float: right;
+            margin-right: 2em;
+            ul {
+                li {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: @font-color;
+                    }
+                }
+
+                li ~ li {
+                    margin-left: 2.2em;
+                }
+
+            }
+
+        }
+
+    }
+}
