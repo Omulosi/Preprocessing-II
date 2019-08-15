@@ -263,3 +263,19 @@ header .main-menu nav ul li ~ li {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  background: #17A2B8;
+  color: #FFFFFF;
+  padding: 0.6em 2.8em;
+  font-size: 1.8em;
+  border-radius: 10px;
+}
