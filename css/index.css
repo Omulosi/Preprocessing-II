@@ -244,6 +244,12 @@ header .main-menu nav ul li ~ li {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-device-width: 500px) {
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
 .home .hero-section {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 1em;
