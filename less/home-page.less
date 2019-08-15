@@ -20,8 +20,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -35,6 +33,27 @@
         border-radius: 10px;
       }
     }
+    @media @mobile {
+        flex-direction: column;
+        justify-content: space-between;
+        .text-content {
+            width: 100%;
+            flex: 1;
+            padding-bottom: 1em;
+
+            h2 {
+                font-size: 5rem;
+            }
+        }
+        .img-content {
+            width: 100%;
+            flex: 1;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
   }
 
   .inverse-content {
@@ -44,11 +63,23 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile {
+        .text-content {
+            flex: 1;
+        }
+
+        .img-content {
+            flex: 1;
+            order: 5;
+        }
     }
   }
 
@@ -58,6 +89,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+        width: 100%;
     }
   }
 
