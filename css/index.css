@@ -323,6 +323,15 @@ header .main-menu nav ul li ~ li {
 @media (max-device-width: 500px) {
   .home .content-destination {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-betwen;
+  }
+  .home .content-destination h2 {
+    font-size: 5rem;
+  }
+  .home .content-destination * {
+    flex: 1;
   }
 }
 .home .content-pick {
