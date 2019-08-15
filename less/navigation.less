@@ -30,4 +30,48 @@ header {
         }
 
     }
+
+    @media @mobile {
+        padding-bottom: 3em;
+        padding-top: 7em;
+
+        .main-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                flex: 1;
+                order: -1;
+                font-size: 5rem;
+                font-weight: bold;
+            }
+            nav { 
+                margin-right: 2em;
+                display: block;
+                float: none;
+                font-size: 3rem;
+                ul {
+                    flex: 1;
+                    display: flex;
+                    li {
+                        display: inline-flex;
+
+                        a {
+                            text-decoration: none;
+                            color: @font-color;
+                        }
+                    }
+
+                    li ~ li {
+                        margin-left: 2.2em;
+                    }
+
+                }
+
+            }
+
+        }
+    }
 }

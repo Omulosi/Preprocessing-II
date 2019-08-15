@@ -195,6 +195,44 @@ header .main-menu nav ul li a {
 header .main-menu nav ul li ~ li {
   margin-left: 2.2em;
 }
+@media (max-device-width: 500px) {
+  header {
+    padding-bottom: 3em;
+    padding-top: 7em;
+  }
+  header .main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .main-menu h1 {
+    flex: 1;
+    order: -1;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  header .main-menu nav {
+    margin-right: 2em;
+    display: block;
+    float: none;
+    font-size: 3rem;
+  }
+  header .main-menu nav ul {
+    flex: 1;
+    display: flex;
+  }
+  header .main-menu nav ul li {
+    display: inline-flex;
+  }
+  header .main-menu nav ul li a {
+    text-decoration: none;
+    color: #212529;
+  }
+  header .main-menu nav ul li ~ li {
+    margin-left: 2.2em;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
