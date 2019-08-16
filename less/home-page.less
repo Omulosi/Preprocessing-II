@@ -1,13 +1,25 @@
 .home {
 
+    .hero-section {
+        border-bottom: 2px dashed @navigation-border;
+        padding-bottom: 1em;
+        .hero-img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .hero-content {
+            margin-top: 2em;
+        }
+    }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -21,6 +33,27 @@
         border-radius: 10px;
       }
     }
+    @media @mobile {
+        flex-direction: column;
+        justify-content: space-between;
+        .text-content {
+            width: 100%;
+            flex: 1;
+            padding-bottom: 1em;
+
+            h2 {
+                font-size: 5rem;
+            }
+        }
+        .img-content {
+            width: 100%;
+            flex: 1;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
   }
 
   .inverse-content {
@@ -30,11 +63,23 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile {
+        .text-content {
+            flex: 1;
+        }
+
+        .img-content {
+            flex: 1;
+            order: 5;
+        }
     }
   }
 
@@ -44,6 +89,21 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-betwen;
+
+        h2 {
+            font-size: 5rem;
+        }
+
+        * {
+            flex: 1;
+        }
     }
   }
 
@@ -56,6 +116,37 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+          .generic-btn(@button-bg, @white);
+          padding: 0.6em 2.8em;
+          font-size: 1.8em;
+          border-radius: 10px;
+      }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        margin-bottom: 2em;
+
+        .destination {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2em;
+
+            h4 {
+                font-size: 4rem;
+            }
+            
+            .btn {
+                  padding: 1.2em 5.6em;
+                  font-size: 2.5em;
+                  border-radius: 30px;
+                  margin-top: 1em;
+            }
+        }
     }
   }
 }// home
